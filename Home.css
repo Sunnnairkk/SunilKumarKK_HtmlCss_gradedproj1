@@ -1,0 +1,224 @@
+body {
+    background-color: honeydew;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    margin: 0%;
+    text-align: center;
+}
+
+body h2 {
+    text-align: center;
+}
+
+header {
+    font-weight: bolder;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color:rgb(104, 99, 99);
+}
+
+#navigate {
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    text-align: left;
+}
+
+footer {
+    color: white;
+    font-size:15px ;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(104, 99, 99);
+    bottom: 0%;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgb(104, 99, 99);
+    padding: 10px;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.menu li a:hover {
+    background-color: rgb(15, 15, 15);
+    padding: 5px;
+}
+
+.menu li:nth-child(2):hover #submenu1, .menu li:nth-child(3):hover #submenu2 {
+    display: block;
+}
+
+#submenu1, #submenu2 {
+    position: absolute;
+    width: 200px;
+    max-width: 200px;
+    display: none;
+    top: 60px;
+    background-color: rgb(104, 99, 99);
+    padding: 0px;
+}
+
+#submenu1 li, #submenu2 li {
+    display: block;
+    padding: 5px;
+}
+
+#submenu1 li:hover, #submenu2 li:hover {
+    background-color:rgb(15, 15, 15) ;
+    padding: 5px;
+}
+
+#submenu1 li a:hover, #submenu2 li a:hover {
+    background-color: rgb(15, 15, 15);
+    font-size: 20px;
+    padding: 5px;
+}
+
+#banner {
+    animation-name: changeimage;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: 100% 400px;
+    background-position-x: 0,0;
+    background-repeat: no-repeat;
+    border: 2px solid steelblue;
+}
+
+@keyframes changeimage {
+    0% {
+        background-image: url("Images/Animation/ani1.jpg");
+    }
+    25% {
+        background-image: url("Images/Animation/ani2.png");
+    }
+    50% {
+        background-image: url("Images/Animation/ani3.jpg");
+    }
+    75% {
+        background-image: url("Images/Animation/ani4.jpg");
+    }
+    100% {
+        background-image: url("Images/Animation/ani5.jpg");
+    }
+}
+
+
+#covidcare, #diabetscare {
+    margin: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.covid, .diabets {
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+    width: 340px;
+    height: 410px;
+    border: 2px solid skyblue;
+    display: inline-block;
+    text-align: center;
+}
+
+.covid img, .diabets img {
+    height: 200px;
+    width: 300px;
+    align-content: center;
+}
+
+.covid img:hover, .diabets img:hover {
+    width: 350px;
+    border: 2px dashed crimson;
+}
+
+.butclick {
+    padding: 2px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(88, 82, 88);
+    border: 2px solid rgb(69, 118, 151);
+}
+
+.butclick:hover {
+    cursor: pointer;
+}
+
+.butclick:focus {
+    color: blue;
+    background-color: rgb(250, 234, 230);
+    border: 3px solid rgb(241, 29, 29);
+}
+
+
+#main {
+    height: 650px;
+    width: 750px;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: cornsilk;
+    overflow-x: scroll;
+    margin-left: 20%;
+    background-image: url("Images/Lab-Test/lab-test.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 600px;
+    background-position-x: 680px;
+    background-position-y: 90px;
+    background-attachment: fixed;
+}
+
+.inner1 {
+    width: 350px;
+    height: 600px;
+    background-color: cornsilk;
+    text-align: left;
+}
+
+
+.entry {
+    width: 300px;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#district {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#buttons {
+    float: right;
+}
+
+#backtohome {
+    text-decoration: none;
+    padding: 3px;
+    background-color: cyan;
+    border-radius: 5px;
+    color: crimson;
+    margin-top: 10px;
+}

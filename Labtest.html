@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <h2>Complete the Form for Lab Test</h2>
+    <section id="main">
+        <section class="inner1">
+            <form action="">
+                <article>
+                    <h3>a. Patient Contact Details</h3>
+                    <label for="name">Full Name :</label> <br>
+                    <input type="text" name="Name" id="name" value="" required maxlength="70" class="entry">
+                    <br>
+                    <label for="patientid">Patient Id if exists :</label> <br>
+                    <input type="text" name="Patientid" id="patientid" value="" maxlength="20" class="entry"> 
+                    <br>
+                    <label for="phnum">Phone Number :</label>
+                    <input type="number" name="Contactnum" id="phnum" required min="6000000000" max="9999999999">
+                    <br>
+                    <label for="emailid">Email Id :</label> <br>
+                    <input type="email" name="Emailid" id="emailid" value="" class="entry">
+                    <br>
+                </article>
+                <article>
+                    <h3>b. Address</h3>
+                    <input type="text" name="hosuenum" value="House Number/Name" class="entry">
+                    <br>
+                    <input type="text" name="street" value="Street" class="entry"> 
+                    <br>
+                    <input type="text" name="area" value="Land Mark/Location" class="entry">
+                    <br>
+                    <select name="District" id="district" required class="entry">
+                        <option value="">Choose</option>
+                        <option value="trivandrum">Trivandrum</option>
+                        <option value="ernakulam">Ernakulam</option>
+                        <option value="kottayam">Kottayam</option>
+                        <option value="kollam">Kollam</option>
+                        <option value="alappuzha">Alappuzha</option>
+                        <option value="trissur">Trissur</option>
+                    </select>
+                    <br>
+                </article>
+                <article>
+                    <h3>c. Test Type</h3>
+                    <input type="checkbox" id="c1" name="option1" value="cbc">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="completeurine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="lipidprofile">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="tsh">
+                    <label for="c4">Thyroid Stimulating Hormone (TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option5" value="glucosetest">
+                    <label for="c5">Glucose Test</label>
+                    <br>
+                </article>
+                <article>
+                    <h3>d. Do you want hard copy of the report?</h3>
+                    <input type="radio" id="r1" name="option" value="yes" required>
+                    <label for="r1">Yes</label>
+                    <br>
+                    <input type="radio" id="r2" name="option" value="No">
+                    <label for="r2">No</label>
+                    <br>
+                </article>
+                <article>
+                    <h3>e. Lab Test Date and Time</h3>
+                    <label for="testdt">Test Date</label>
+                    <input type="date" id="testdt" required pattern="\d{4}-\d{2}-\d{2}">
+                    <br>
+                    <label for="testtime">Test Time</label>
+                    <input type="time" id="testtime" required pattern="\d{2}:\d{2}">
+                    <br>
+                </article>
+                <br>
+                <div id="buttons" >
+                    <button type="reset" id="buttonreset">Reset</button>
+                    <button type="submit" id="buttonsubmit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <br>
+    <br>
+    <a href="home.html" id="backtohome">Back to Home</a>
+</body>
+</html>
